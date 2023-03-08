@@ -20,5 +20,6 @@ public class SpringAopDemo {
                 BeanConfig.class);
         ShoppingCart cart = ctx.getBean(ShoppingCart.class);
         cart.checkout("CANCELED");
+        cart.quantity();
     }
 }
